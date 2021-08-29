@@ -1,6 +1,6 @@
 PACKAGE := juicefs
 VERSION := $(shell cat juicefs/version.py | sed -n -E 's/^VERSION = "(.+?)"/\1/p')
-JUICEFS_VERSION := 0.14.2
+JUICEFS_VERSION := 0.16.2
 
 clean:
 	rm -rf dist build *.egg-info .pytype .pytest_cache .pytype_output

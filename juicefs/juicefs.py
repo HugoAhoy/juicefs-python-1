@@ -38,8 +38,7 @@ DEFAULT_CONFIG = {
     "memorySize": 300,
     "meta": "",
     "noUsageReport": True,
-    "opencache": False,
-    # "openCache": 0.0,  # v0.15.0 变成了 float
+    "openCache": 0.0,
     "prefetch": 1,
     "pushAuth": "",
     "pushGateway": "",
