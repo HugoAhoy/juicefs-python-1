@@ -686,6 +686,10 @@ def test_flush(jfs, filename):
     jfs.close(fdw)
 
 
+@pytest.mark.skipif(
+    sys.platform == "win32",
+    reason="jfs.concat() will raise FileNotFoundError on Windows",
+)
 def test_concat(jfs, filename, filename2, filename3):
     jfs.create(filename)
     jfs.create(filename2)
